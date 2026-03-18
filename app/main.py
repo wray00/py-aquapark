@@ -3,9 +3,7 @@ from typing import Any
 
 
 class IntegerRange:
-    def __init__(self,
-                 min_amount: int,
-                 max_amount: int) -> None:
+    def __init__(self, min_amount: int, max_amount: int) -> None:
         self.min_amount = min_amount
         self.max_amount = max_amount
 
@@ -26,7 +24,11 @@ class IntegerRange:
 
 
 class Visitor:
-    def __init__(self, name: str, age: int, weight: int, height: int) -> None:
+    def __init__(self,
+                 name: str,
+                 age: int,
+                 weight: int,
+                 height: int) -> None:
         self.name = name
         self.age = age
         self.weight = weight
